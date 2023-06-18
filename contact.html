@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Feedback Form</title>
+
+    <style>
+ body, html {
+  height:100%;
+  background-image: url("https://www.sru.edu/images/news/2019/January/011619b-Inline.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+  	overflow-x: hidden;
+	font-family: 'Dosis', sans-serif;
+}
+      body {
+        font-family: "Poppins", sans-serif;
+        
+ text-align: center;
+      }
+      
+      p {
+        text-align: center;
+        color: white;
+      }
+      
+      #Container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .card{
+                    border-radius: 16px;
+                    color: black;
+                    border: none;
+                    width: 700px;
+                    padding: 10px;
+                  
+                    margin: 15px ;
+                    
+                   
+                    justify-content: center;
+                }
+                .card-img{
+                    border-radius: 16px;
+                    width: 100%;
+                }
+             
+      button {
+        background-color: black;
+        color: white;
+        padding: 10px;
+        cursor: pointer;
+        border: none;
+        font-weight: bold;
+      
+        transition: 0.5s;
+      }
+      
+      button:hover {
+        background-color: orangered;
+      }
+      .checked {
+  color: blueviolet;
+      }
+
+      input[type=text],input[type=date],input[type=time],input[type=number],input[list],textarea{
+            padding:10px;
+            margin:2px;
+            border-color: black;
+            border:3px solid darkblue;
+            border-radius: 3ch;
+            text:bold;
+            background-color: lightgray;
+          }
+            
+
+            button{
+            border-radius: 5cqb;
+            width: 30%;
+            color: antiquewhite;
+            padding: 20px;
+            background-color:green;
+             border: none;
+            color: white;
+            padding: 16px 32px;
+            text-decoration: none;
+            margin: 4px 2px;
+            cursor: pointer;
+           } 
+           
+           label{
+color: black;
+           }
+          </style>
+     
+    
+</head>
+<body>
+
+
+    <div id="Container">
+      <div class="card">
+        
+   
+        <form>
+           
+                <h2>Contact Us</h2>
+
+        <input list="browsers" name="browser" id="browser" placeholder="Select Type">
+        
+        <datalist id="browsers">
+          <option value="Support Request">
+          <option value="Feedback">
+        </datalist><br><br>
+        
+        <input type="text" id="email" name="email" placeholder="Enter Your Email"><br>
+      
+
+        <label>Is anything you would like to see changed or improved? Please be as specific as you would like.</label><br>
+        <textarea name="feedback" maxlength="1200" cols="50" rows="8" ></textarea>
+
+        <h2>Rate Us!!</h2>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<br>
+       
+        
+        
+        <button type="button" onclick="alert('Submited Successfully!')">Click me!</button>
+        <a href="Index.html"><p style="color: black; font-weight: bold;">Continue</p></a>
+        </form>
+       
+      </div> 
+</body>
+</html>
